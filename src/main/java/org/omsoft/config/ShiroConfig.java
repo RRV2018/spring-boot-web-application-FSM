@@ -31,6 +31,7 @@ public class ShiroConfig {
         Map<String,String> filterChain = new HashMap<>();
         filterChain.put("/** ","anon");
         filterChain.put("/addUser","corsAuth,roles[admin]");
+        filterChain.put("/uploadFile","corsAuth,roles[admin]");
         filterChain.put("/delete","corsAuth,roles[admin]");
         filterChain.put("/search","anon");
         Map<String, Filter> filters = new HashMap<>();

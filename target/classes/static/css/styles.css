@@ -114,3 +114,55 @@ span.psw {
 
 }
 
+.clock {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  position: relative;
+  margin: 0 auto;
+  transform: rotate(90deg);
+  animation: rotate 60s infinite linear;
+}
+
+.hand {
+  position: absolute;
+  background-color: #000;
+  transform-origin: bottom center;
+}
+
+.hour-hand {
+  width: 6px;
+  height: 60px;
+  top: 50px;
+  left: 97px;
+  border-radius: 6px 6px 0 0;
+}
+
+.minute-hand {
+  width: 4px;
+  height: 80px;
+  top: 35px;
+  left: 98px;
+  border-radius: 4px 4px 0 0;
+}
+
+.second-hand {
+  width: 2px;
+  height: 90px;
+  top: 30px;
+  left: 99px;
+  background-color: #ff0000;
+  border-radius: 2px 2px 0 0;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(450deg);
+  }
+}
+
+

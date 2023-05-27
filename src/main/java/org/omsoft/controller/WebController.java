@@ -27,7 +27,7 @@ public class WebController {
         return new ModelAndView("login");
     }
 
-    @GetMapping({"/addUser","/searchUser"})
+    @GetMapping({"/addUser","/searchUser","/uploadFile"})
     public ModelAndView redirectToLogin(@RequestParam(name="action",required=false) String action){
         ModelAndView model = new ModelAndView("login");
         System.out.println(action);

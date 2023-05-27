@@ -10,10 +10,10 @@
     </div>
 </c:if>
 <c:if test="${action == 'Add'}">
-    <!-- Tab content -->
-    <div id="Add" class="tabcontentShow">
-        <%@ include file="addUser.jsp"%>
-    </div>
+<!-- Tab content -->
+<div id="Add" class="tabcontentShow">
+    <%@ include file="addUser.jsp"%>
+</div>
 </c:if>
 <c:if test="${action == 'Search'}">
     <div id="SearchObj" class="tabcontentShow">
@@ -26,4 +26,5 @@
         <%@ include file="uploadFile.jsp"%>
     </div>
 </c:if>
+
 <%@ include file="common/footer.jspf"%>
